@@ -16,7 +16,7 @@ footer {
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
-    left: var(--theme-button-width);
+    right: 0px;
 }
 
 #navbar-theme-footer button {
