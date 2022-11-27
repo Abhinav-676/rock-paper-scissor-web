@@ -1,13 +1,15 @@
 :root {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background-color: #fffceb;
+    background-color: whitesmoke;
 
     /* Footer */
     --footer_height: 80px;
     --footer_color: rgb(69, 60, 70);
 
     /* Navbar */
+    --theme-button-height: 50px;
+    --theme-button-width: 50px;
     --nav_height: 80px;
     --title_color: #E09F3E;
     --title_size: 42px;
