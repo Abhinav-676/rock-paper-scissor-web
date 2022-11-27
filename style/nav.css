@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     height: var(--nav_height);
-    background-image: linear-gradient(to top, var(--top_grad),var(--bottom_grad));
+    /*background-image: linear-gradient(to top, var(--top_grad),var(--bottom_grad));*/
     width: 100%;
 }
 

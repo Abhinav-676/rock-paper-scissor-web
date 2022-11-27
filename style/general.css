@@ -1,7 +1,7 @@
 :root {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background-color: #fff1f2;
+    background-color: #fffceb;
 
     /* Footer */
     --footer_height: 80px;
@@ -9,9 +9,7 @@
 
     /* Navbar */
     --nav_height: 80px;
-    --top_grad: #D90077;
-    --bottom_grad: #d9007770;
-    --title_color: white;
+    --title_color: #E09F3E;
     --title_size: 42px;
 }
 
