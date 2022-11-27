@@ -1,0 +1,24 @@
+:root {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #fff1f2;
+
+    /* Footer */
+    --footer_height: 80px;
+    --footer_color: rgb(69, 60, 70);
+
+    /* Navbar */
+    --nav_height: 80px;
+    --top_grad: #D90077;
+    --bottom_grad: #d9007770;
+    --title_color: white;
+    --title_size: 42px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    margin: 0;
+}

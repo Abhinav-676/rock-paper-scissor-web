@@ -1,0 +1,89 @@
+
+
+// 0 for S, 1 for W, 2 for G
+
+let score = 0, scoreCmp = 0;
+
+for (let i = 0; i < 5; i++)
+{
+    alert(`Round ${i + 1}`)
+    
+    let cmp = Math.floor(Math.random() * 3)
+
+    let inp = prompt("Enter S, W or G")
+
+    console.time("a")
+
+    if (inp == null)
+    {
+        break
+    }
+
+    switch(inp)
+    {
+        case "S":
+            if (cmp == 0)
+            {
+                alert(`Snake vs Snake\nDraw, try again!`)
+                i--;
+                break
+            }else if (cmp == 1)
+            {
+                score++;
+                alert(`Snake vs Water\nYour score is: ${score}\nComputer score is: ${scoreCmp}`)
+                break
+            }else{
+                scoreCmp++;
+                alert(`Snake vs Gun\nYour score is: ${score}\nComputer score is: ${scoreCmp}`)
+                break
+            } 
+
+        case "W":
+            if (cmp == 0)
+            {
+                scoreCmp++;
+                alert(`Water vs Snake\nYour score is: ${score}\nComputer score is: ${scoreCmp}`)
+                break
+            }else if (cmp == 1)
+            {
+                
+                alert("Water vs Water\nDraw, try again!!")
+                i--;
+                break
+            }else {
+
+                score++;
+                alert(`Water vs Gun\nYour score is: ${score}\nComputer score is: ${scoreCmp}`)
+                break
+            }
+            
+        case "G":
+            if (cmp == 0)
+            {
+                score++;
+                alert(`Gun vs Snake\nYour score is: ${score}\nComputer score is: ${scoreCmp}`)
+                break
+            }else if (cmp == 1)
+            {
+                scoreCmp++;
+                alert(`Gun vs Water\nYour score is: ${score}\nComputer score is: ${scoreCmp}`)
+                break
+            }else {
+                alert("Gun vs Gun\nDraw, try again!")
+                i--;
+                break
+            } 
+
+            default:
+                i--;
+                alert("Please enter a correct value")
+    }
+}
+
+if(score > scoreCmp)
+{
+    alert(`Your Win!!\nYour score is: ${score}\nComputer score is: ${scoreCmp}`)
+}else {
+    alert(`You Loose.\nYour score is: ${score}\nComputer score is: ${scoreCmp}`)
+}
+

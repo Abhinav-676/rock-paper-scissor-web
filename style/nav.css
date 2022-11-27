@@ -1,0 +1,21 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--nav_height);
+    background-image: linear-gradient(to top, var(--top_grad),var(--bottom_grad));
+    width: 100%;
+}
+
+/* Navbar Title */ 
+
+#navbar-title {
+    font-family: 'Pacifico', cursive;
+    font-size: var(--title_size);
+    color: var(--title_color);
+    white-space: nowrap;
+}
+
+#navbar-title p {
+    margin: 0;
+}
