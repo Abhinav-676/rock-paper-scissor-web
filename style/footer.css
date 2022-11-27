@@ -40,20 +40,6 @@ footer {
     cursor: pointer;
 }
 
-.dark-theme-shadow {
-    box-shadow: var(--dark-theme-shadow-idle);
-}
-.dark-theme-shadow:active {
-    box-shadow: var(--dark-theme-shadow-active);
-}
-
-.light-theme-shadow {
-    box-shadow: var(--light-theme-shadow-idle);
-}
-.light-theme-shadow:active {
-    box-shadow: var(--light-theme-shadow-active);
-}
-
 @media (min-width: 650px)
 {
     #navbar-theme-footer {
