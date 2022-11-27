@@ -15,7 +15,15 @@
     --title_size: 42px;
 
     /* Main */
-    --main-height: calc(100vh - var(--nav_height))
+    --main-height: calc(100vh - var(--nav_height));
+
+    /* Theme icon box shadow */
+    --light-theme-shadow-idle: 0px 0px 4px 2px #fee127be;
+    --dark-theme-shadow-idle: 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
+    --light-theme-shadow-active: 0px 0px 3px 1px #fee127be;
+    --dark-theme-shadow-active: 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
+
+    /* Theme icon source */
 }
 
 ::-webkit-scrollbar {
