@@ -1,11 +1,10 @@
 #navbar {
     position: relative;
     height: var(--nav_height);
-    /*background-image: linear-gradient(to top, var(--top_grad),var(--bottom_grad));*/
     width: 100%;
 }
 
-/* Navbar Theme */
+/* Navbar Theme Button */
 #navbar-theme {
     position: absolute;
     transform: translate(-50%,-50%);
@@ -38,7 +37,6 @@
     height: var(--theme-button-height);
     width: var(--theme-button-width);
 }
-
 
 /* Navbar Title */ 
 

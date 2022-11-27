@@ -13,6 +13,9 @@
     --nav_height: 80px;
     --title_color: #57737a;
     --title_size: 42px;
+
+    /* Main */
+    --main-height: calc(100vh - var(--nav_height))
 }
 
 ::-webkit-scrollbar {
