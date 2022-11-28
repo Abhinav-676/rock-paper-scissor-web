@@ -1,29 +1,42 @@
 
-let theme = 0;
+let theme = 0
+const root = document.querySelector(':root')
+let themeImage = document.getElementsByClassName('theme-icon')
 
+
+function renderLightTheme() {
+    themeImage[0].src = "img/Untitleddark.svg"
+    themeImage[1].src = "img/Untitleddark.svg"
+    root.style.setProperty('background-color','#f5f5f5')
+    root.style.setProperty('--nav-bg','#EF8354')
+    root.style.setProperty('--title_color','#f5f5f5')
+    root.style.setProperty('--themeButton-shadow-idle','0px 0px 4px 2px rgba(0, 0, 0, 0.75)')
+    root.style.setProperty('--themeButton-shadow-active','0px 0px 3px 1px rgba(0, 0, 0, 0.75)')
+    root.style.setProperty('--footer-color','#4F5D75')
+}
+
+function renderDarkTheme() {
+    themeImage[0].src = "img/Untitledlight.svg"
+    themeImage[1].src = "img/Untitledlight.svg"
+    root.style.setProperty('background-color','#6C757D')
+    root.style.setProperty('--nav-bg','#343A40')
+    root.style.setProperty('--title_color','#f5f5f5')
+    root.style.setProperty('--themeButton-shadow-idle','0px 0px 4px 2px #fee127be')
+    root.style.setProperty('--themeButton-shadow-active','0px 0px 3px 1px #fee127be')
+    root.style.setProperty('--footer-color','#343A40')
+}
+
+renderLightTheme()
 
 const changeTheme = () => {
-    
-    const ThemeButton = document.getElementsByClassName('theme-button')
 
-    if(theme == 0)
+    if (theme == 0)
     {
-        ThemeButton[0].firstElementChild.src = "img/Untitledlight.svg";
-        ThemeButton[0].classList.replace('dark-theme-shadow', 'light-theme-shadow')
-
-        ThemeButton[1].firstElementChild.src = "img/Untitledlight.svg";
-        ThemeButton[1].classList.replace('dark-theme-shadow','light-theme-shadow')
-        
+        renderDarkTheme()
         theme = 1
 
-    } else {
-
-        ThemeButton[0].firstElementChild.src = "img/Untitleddark.svg";
-        ThemeButton[0].classList.replace('light-theme-shadow', 'dark-theme-shadow')
-
-        ThemeButton[1].firstElementChild.src = "img/Untitleddark.svg";
-        ThemeButton[1].classList.replace('light-theme-shadow', 'dark-theme-shadow')
-
+    }else {
+        renderLightTheme()
         theme = 0
     }
 }

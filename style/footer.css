@@ -1,9 +1,9 @@
 footer {
     position: absolute;
-    bottom: - var(--footer_height);
+    bottom: - var(--nav-height);
     width: 100%;
-    height: var(--footer_height);
-    background-color: var(--footer_color);
+    height: var(--footer-height);
+    background-color: var(--footer-color);
 }
 
 #footer-container {
@@ -12,22 +12,29 @@ footer {
     position: relative;
 }
 
-#navbar-theme-footer {
+/* Footer: Theme button */
+
+#footer-theme-div {
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     right: 0px;
 }
 
-#navbar-theme-footer button {
+#footer-theme-div button {
     position: relative;
     padding: 0;
     border-radius: 50%;
     height: var(--theme-button-height);
     width: var(--theme-button-width);
+    box-shadow: var(--themeButton-shadow-idle);
 }
 
-#navbar-theme-footer button img {
+#footer-theme-div button:active {
+    box-shadow: var(--themeButton-shadow-active);
+}
+
+#footer-theme-div button img {
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -36,13 +43,13 @@ footer {
     width: var(--theme-button-width);
 }
 
-#navbar-theme-footer button:hover {
+#footer-theme-div button:hover {
     cursor: pointer;
 }
 
 @media (min-width: 650px)
 {
-    #navbar-theme-footer {
+    #footer-theme-div {
        display: none;
     }
 }

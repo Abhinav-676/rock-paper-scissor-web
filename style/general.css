@@ -1,29 +1,20 @@
 :root {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background-color: whitesmoke;
 
     /* Footer */
-    --footer_height: 80px;
-    --footer_color: rgb(69, 60, 70);
+    --footer-height: 80px;
+    --footer-color: none;
 
     /* Navbar */
     --theme-button-height: 50px;
     --theme-button-width: 50px;
-    --nav_height: 80px;
-    --title_color: #57737a;
-    --title_size: 42px;
+    --nav-height: 80px;
+    --title-size: 42px;
 
     /* Main */
-    --main-height: calc(100vh - var(--nav_height));
+    --main-height: calc(100vh - var(--nav-height));
 
-    /* Theme icon box shadow */
-    --light-theme-shadow-idle: 0px 0px 4px 2px #fee127be;
-    --dark-theme-shadow-idle: 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
-    --light-theme-shadow-active: 0px 0px 3px 1px #fee127be;
-    --dark-theme-shadow-active: 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
-
-    /* Theme icon source */
 }
 
 ::-webkit-scrollbar {
@@ -32,18 +23,4 @@
 
 body{
     margin: 0;
-}
-
-.dark-theme-shadow {
-    box-shadow: var(--dark-theme-shadow-idle);
-}
-.dark-theme-shadow:active {
-    box-shadow: var(--dark-theme-shadow-active);
-}
-
-.light-theme-shadow {
-    box-shadow: var(--light-theme-shadow-idle);
-}
-.light-theme-shadow:active {
-    box-shadow: var(--light-theme-shadow-active);
 }
